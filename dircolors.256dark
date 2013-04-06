@@ -8,6 +8,11 @@
 # More Information at
 # https://github.com/seebi/dircolors-solarized
 
+# COLOR needs one of these arguments: 'tty' colorizes output to ttys, but not
+# pipes. 'all' adds color characters to all output. 'none' shuts colorization
+# off.
+COLOR tty
+
 # Term Section
 TERM Eterm
 TERM ansi
@@ -104,6 +109,7 @@ CAPABILITY 30;41 # file with capability
 STICKY_OTHER_WRITABLE 48;5;64;38;5;230 # dir that is sticky and other-writable (+t,o+w)
 OTHER_WRITABLE 48;5;235;38;5;33 # dir that is other-writable (o+w) and not sticky
 STICKY 48;5;33;38;5;230 # dir with the sticky bit set (+t) and not other-writable
+
 # This is for files with execute permission:
 EXEC 01;38;5;64
 
@@ -139,6 +145,7 @@ EXEC 01;38;5;64
 .rz     01;38;5;61
 .apk    01;38;5;61
 .gem    01;38;5;61
+.iso    01;38;5;61
 
 # Image formats (yellow)
 .jpg    00;38;5;136
@@ -264,5 +271,3 @@ EXEC 01;38;5;64
 .anx 01;38;5;166
 .ogv 01;38;5;166
 .ogx 01;38;5;166
-
-
