@@ -1,4 +1,4 @@
-OUT = dircolors.16dark dircolors.16light dircolors.256dark dircolors.256light dircolors.16Mdark dircolors.16Mlight
+OUT = dircolors.16dark dircolors.16light dircolors.256dark dircolors.256light dircolors.16Mdark dircolors.16Mlight dircolors.base16light dircolors.base16dark
 PYTHON = python
 
 all: $(OUT)
@@ -21,8 +21,14 @@ dircolors.16Mdark: dircolors.in transform.py
 dircolors.16Mlight: dircolors.in transform.py
 	$(PYTHON) transform.py 16M light
 
+dircolors.base16dark: dircolors.in transform.py
+	$(PYTHON) transform.py base16 dark
+
+dircolors.base16light: dircolors.in transform.py
+	$(PYTHON) transform.py base16 light
+
 clean:
-	rm $(OUT)
+	rm -f $(OUT)
 	sudo rm -rf test-directory
 	rm -rf __pycache__
 

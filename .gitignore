@@ -1,8 +1,6 @@
 /__pycache__
-/dircolors.16dark
-/dircolors.16light
-/dircolors.256dark
-/dircolors.256light
-/dircolors.16Mdark
-/dircolors.16Mlight
+/dircolors.256*
+/dircolors.16*
+/dircolors.sol*
+/dircolors.base16*
 /test-directory
